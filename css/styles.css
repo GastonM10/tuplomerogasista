@@ -16,7 +16,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -52,7 +52,7 @@
 }
 
 .instagram-widget {
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 .projects-section {
@@ -95,6 +95,7 @@
   color: white;
 }
 
+/* Botón back to top */
 #btn-back-to-top {
   position: fixed;
   bottom: 10px;
@@ -137,5 +138,13 @@
 }
 
 .btn-phone:hover {
-    background-color:#1ab152;
+    background-color:#0b1494;
+}
+
+.projects-lists-left {
+  text-align: left;
+}
+
+.projects-lists-right {
+  text-align: left;
 }
