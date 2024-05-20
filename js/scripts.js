@@ -52,12 +52,28 @@ let getNews = async() => {
 
 }
 
+// Botón "Mostrar más noticias"
 document.getElementById('show-more-btn').addEventListener('click', function() {
     var hiddenCards = document.querySelectorAll('.hidden');
     hiddenCards.forEach(function(card) {
         card.classList.remove('hidden');
     });
     this.style.display = 'none'; // Ocultar el botón después de mostrar todas las noticias
+});
+
+
+// Colapsar Navbar al hacer click en modo dispositivo
+let navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+navbarLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+        // Colapsar el menú después de hacer clic en un enlace
+        var navbarToggler = document.querySelector('.navbar-toggler');
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+
+        if (window.getComputedStyle(navbarToggler).display !== 'none') {
+            navbarToggler.click();
+        }
+    });
 });
 
 // Obtengo las noticias generales desde el JSON
