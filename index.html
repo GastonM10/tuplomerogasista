@@ -53,7 +53,7 @@
                 <div class="col-lg-12 col-xs-12">
                     <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" id="navbar">
                         <div class="container">
-                            <img src="./assets/img/logo-nav-blanco.png" alt="Logo Tu Plomero Gasista" href="#page-top" width="250px">
+                            <img src="./assets/img/logo-nav-blanco.png" alt="Logo Tu Plomero Gasista" href="#page-top" width="200px">
                             <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -120,13 +120,12 @@
     </section>
 
     <!-- Noticias -->
-    <section class="news-section bg-black" id="news">
-        <div class="container mt-5 text-white pt-5">
-            <h2 class="text-center mb-4 display-3">Noticias</h2>
-            <div class="row" id="news-section">
-                <article id="contenidonoticias" class="row"></article>
-            </div>
-        </div>  
+    <section class="news-section bg-black p-5" id="news">
+        <h2 class="text-center text-white mb-4 display-3">Noticias</h2>
+        <article id="contenidonoticias" class="row"></article>
+        <div class="text-center p-4">
+            <button class="btn btn-secondary" id="show-more-btn">Ver más noticias</button>
+        </div>
     </section>
 
     <!-- Trabajos -->
@@ -234,42 +233,7 @@
         <div class="elfsight-app-dfd0cb28-0218-4f35-bfb9-24d8d038882e" data-elfsight-app-lazy></div>
     </section>
 
-    <!-- Contact-->
-    <!-- <section class="contact-section bg-black text-center" id="contact">
-        <div class="justify-content-center flex-column">
-            <div>
-                <p class="display-4 text-white">Contactanos</p>
-            </div>
-            <div class="social d-flex justify-content-center align-content-center">
-                <a class="mx-2 fa-3x" href="tel:005491131828701" target="_blank"><i class="bi bi-telephone"></i></a>
-                <a class="mx-2 fa-3x" href="https://wa.me/5491131828701" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                <a class="mx-2 fa-3x" href="https://www.youtube.com/@tuplomerogasista" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a class="mx-2 fa-3x" href="https://www.instagram.com/tugasistaplomero" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </section> -->
-    
-    <!-- <section class="contact-section bg-black text-center" id="contact">
-        <footer class="text-lg-start">
-            <div class="container d-flex justify-content-center py-5">
-                <div class="row">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <p class="display-4 text-white">Contactanos</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <a class="mx-2 fa-3x" href="tel:005491131828701" target="_blank"><i class="bi bi-telephone"></i></a>
-                        <a class="mx-2 fa-3x" href="https://wa.me/5491131828701" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                        <a class="mx-2 fa-3x" href="https://www.youtube.com/@tuplomerogasista" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a class="mx-2 fa-3x" href="https://www.instagram.com/tugasistaplomero" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center text-white p-3 bg-black d-flex align-bottom justify-content-center align-items-end">
-                <a class="text-white copyright-text" href="mailto:conectcam@gmail.com">© 2024 Copyright MalucoStudio</a>
-            </div>
-        </footer>
-    </section> -->
-
+    <!-- Contacto -->
     <section class="contact-section bg-black text-center" id="contact">
         <footer class="text-lg-start">
 
@@ -279,39 +243,30 @@
             
             <div class="container d-flex justify-content-center py-5">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 pt-3">
                         <div class="row">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <!-- <a class="contact-list d-flex align-items-center justify-content-center display-6 text-white">Tel - WhatsApp</a> -->
+                            <div class="d-flex align-items-center justify-content-center pb-2">
                                 <a class="display-6 text-white contact-list">Tel - WhatsApp</a>
                             </div>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <ul class="contact-list">
-                                    <li class="contact-list">
-                                        <a class="mx-2 fs-4 contact-list" href="tel:005491131828701" target="_blank"><i class="bi bi-telephone"></i> 15 3182 8701</a>
-                                    </li>
-                                    <li>
-                                        <a class="mx-2 fs-4 contact-list" href="https://wa.me/5491131828701" target="_blank"><i class="bi bi-whatsapp"></i> 11 3182 8701</a>
-                                    </li>
-                                </ul>
+                            <div class="text-center">
+                                <a class="fs-4 contact-list" href="tel:005491131828701" target="_blank"><i class="bi bi-telephone"></i> 15 3182 8701</a>
+                            </div>
+                            <div class="text-center">
+                                <a class="fs-4 contact-list" href="https://wa.me/5491131828701" target="_blank"><i class="bi bi-whatsapp"></i> 11 3182 8701</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 pt-3">
                         <div class="row">
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="display-6 text-white contact-list">Nuestras Redes</a>
                             </div>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <ul class="contact-list">
-                                    <li class="contact-list">
-                                        <a class="mx-2 fs-4 contact-list" href="https://www.instagram.com/tugasistaplomero" target="_blank"><i class="fab fa-instagram"></i> @tugasistaplomero</a>
-                                    </li>
-                                    <li>
-                                        <a class="mx-2 fs-4 contact-list" href="https://www.youtube.com/@tuplomerogasista" target="_blank"><i class="fab fa-youtube"></i> /tuplomerogasista</a>
-                                    </li>
-                                </ul>
+                            <div class="text-center">
+                                <a class="fs-4 contact-list" href="https://www.instagram.com/tugasistaplomero" target="_blank"><i class="fab fa-instagram"></i> tugasistaplomero</a>
+                            </div>
+                            <div class="text-center">
+                                <a class="fs-4 contact-list" href="https://www.youtube.com/@tuplomerogasista" target="_blank"><i class="fab fa-youtube"></i> tuplomerogasista</a>
                             </div>
                         </div>
                     </div>
@@ -320,7 +275,7 @@
                 </div>
             </div>
             <div class="text-center text-white p-3 bg-black d-flex align-bottom justify-content-center align-items-end">
-                <a class="text-white copyright-text" href="mailto:conectcam@gmail.com">© 2024 Copyright MalucoStudio</a>
+                <a class="text-white copyright-text">© 2024 Copyright - Tu Plomero Gasista</a>
             </div>
         </footer>
     </section>

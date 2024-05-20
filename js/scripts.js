@@ -52,6 +52,14 @@ let getNews = async() => {
 
 }
 
+document.getElementById('show-more-btn').addEventListener('click', function() {
+    var hiddenCards = document.querySelectorAll('.hidden');
+    hiddenCards.forEach(function(card) {
+        card.classList.remove('hidden');
+    });
+    this.style.display = 'none'; // Ocultar el botón después de mostrar todas las noticias
+});
+
 // Obtengo las noticias generales desde el JSON
 getNews();
 
@@ -63,11 +71,20 @@ function renderNews(noticias) {
 
     for (const newsId of noticias) {
 
+        let hiddenCardSet = '';
+        
+        if(`${newsId.id}` > 3) {
+            hiddenCardSet = 'hidden';
+        }
+
+        //
+
         // Agrego las noticias a la tabla
         document.getElementById("contenidonoticias").innerHTML +=
         `
-        <div class="col-md-4 mb-4">
-            <div class="card text-start text-bg-dark mb-3" style="max-width: 18rem;">
+        
+        <div class="col-md-4 ${hiddenCardSet}">
+            <div class="card text-start text-bg-dark mb-3">
                 <div class="card-body">
                     <h5 class="card-title">${newsId.titulo}</h5>
                     <p class="card-text fixed-card text-white" id="card-text-resume">${newsId.contenido}</p>
